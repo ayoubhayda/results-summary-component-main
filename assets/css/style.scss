@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700&display=swap');
+// Colors 
+// Primary
+
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+//list bg
+
+$Light-red-bg: hsla(0, 100%, 67%, 0.096);
+$Orangey-yellow-bg: hsla(39, 100%, 56%, 0.096);
+$Green-teal-bg: hsla(166, 100%, 37%, 0.089);
+$Cobalt-blue-bg: hsla(234, 85%, 45%, 0.082);
+
+
+
+// Gradients
+
+$Light-slate-blue: hsl(252, 100%, 67%);
+$Light-royal-blue: hsl(241, 81%, 54%);
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+
+// Neutral
+
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+$light-gray-blue: hsl(230, 6%, 58%);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    background-color: $White;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 47%;
+    height: 430px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 50px 0 rgba(75, 133, 221, 0.288);
+
+    .card {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-result {
+        color: $White;
+        background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
+
+        p {
+            font-size: 15px;
+            color: $Light-lavender;
+            line-height: 22px;
+        }
+
+        .card-header {
+            color: $Light-lavender;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+
+            .circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-image: linear-gradient($Violet-blue, $Persian-blue);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .card-footer {
+            width: 68%;
+
+            h2 {
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 17px;
+            }
+
+            text-align: center;
+
+        }
+    }
+
+    .card-details {
+
+        .card-items {
+            width: 82%;
+        }
+
+        .card-header {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            color: $Dark-gray-blue;
+        }
+
+        .card-body {
+            margin: 11px 0 14px 0;
+
+            ul {
+                list-style: none;
+
+                li,
+                li span {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                li {
+                    height: 45px;
+                    border-radius: 5px;
+                    margin: 15px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+
+                    .details {
+                        color: $Dark-gray-blue;
+
+                        span {
+                            color: $light-gray-blue;
+                        }
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                #reaction {
+                    color: $Light-red;
+                    background-color: $Light-red-bg;
+                }
+
+                #memory {
+                    color: $Orangey-yellow;
+                    background-color: $Orangey-yellow-bg;
+                }
+
+                #verbal {
+                    color: $Green-teal;
+                    background-color: $Green-teal-bg;
+                }
+
+                #visual {
+                    color: $Cobalt-blue;
+                    background-color: $Cobalt-blue-bg;
+                }
+            }
+        }
+
+        .card-footer {
+            button {
+                width: 100%;
+                height: 45px;
+                border-radius: 45px;
+                background-color: $Dark-gray-blue;
+                border: none;
+                color: $White;
+                cursor: pointer;
+                scroll-behavior: smooth;
+                transition: 0.5s;
+
+                &:hover {
+                    background-image: linear-gradient($Light-slate-blue, $Light-royal-blue);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        .card{
+            width: 100%;
+            justify-content: space-around;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 30px 0 40px 0;
+        }
+    }
+}

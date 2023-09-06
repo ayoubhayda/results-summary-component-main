@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 47%;
+  height: 430px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 50px 0 rgba(75, 133, 221, 0.288);
+}
+.container .card {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-result {
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.container .card-result p {
+  font-size: 15px;
+  color: hsl(241, 100%, 89%);
+  line-height: 22px;
+}
+.container .card-result .card-header {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+  font-weight: 500;
+}
+.container .card-result .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.container .card-result .card-body .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-result .card-body .circle h3 {
+  font-size: 50px;
+}
+.container .card-result .card-footer {
+  width: 68%;
+  text-align: center;
+}
+.container .card-result .card-footer h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+.container .card-details .card-items {
+  width: 82%;
+}
+.container .card-details .card-header {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: hsl(224, 30%, 27%);
+}
+.container .card-details .card-body {
+  margin: 11px 0 14px 0;
+}
+.container .card-details .card-body ul {
+  list-style: none;
+}
+.container .card-details .card-body ul li,
+.container .card-details .card-body ul li span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .card-details .card-body ul li {
+  height: 45px;
+  border-radius: 5px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.container .card-details .card-body ul li .details {
+  color: hsl(224, 30%, 27%);
+}
+.container .card-details .card-body ul li .details span {
+  color: hsl(230, 6%, 58%);
+}
+.container .card-details .card-body ul li span {
+  display: flex;
+  align-items: center;
+}
+.container .card-details .card-body ul li span img {
+  margin-right: 10px;
+}
+.container .card-details .card-body ul #reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.096);
+}
+.container .card-details .card-body ul #memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.096);
+}
+.container .card-details .card-body ul #verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.089);
+}
+.container .card-details .card-body ul #visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.082);
+}
+.container .card-details .card-footer button {
+  width: 100%;
+  height: 45px;
+  border-radius: 45px;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.container .card-details .card-footer button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .container .card {
+    width: 100%;
+    justify-content: space-around;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 30px 0 40px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

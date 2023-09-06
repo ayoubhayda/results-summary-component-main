@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card-result card">
+      <div class="card-header">
+        Your Result
+      </div>
+      <div class="card-body">
+        <div class="circle">
+          <h3>76</h3>
+          <p>of 100</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <h2>Great</h2>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="card-details card">
+      <div class="card-header card-items">
+        Summary
+      </div>
+      <div class="card-body card-items">
+        <ul>
+          <li id="reaction"><span><img src="./assets/images/icon-reaction.svg" alt="icon"> Reaction</span><span  class="details">80 <span>&nbsp;/ 100</span></span></li>
+          <li id="memory"><span><img src="./assets/images/icon-memory.svg" alt="icon"> Memory</span><span  class="details">92 <span>&nbsp;/ 100</span></span></li>
+          <li id="verbal"><span><img src="./assets/images/icon-verbal.svg" alt="icon"> Verbal</span><span  class="details">61 <span>&nbsp;/ 100</span></span></li>
+          <li id="visual"><span><img src="./assets/images/icon-visual.svg" alt="icon"> Visual</span><span  class="details">72 <span>&nbsp;/ 100</span></span></li>
+        </ul>
+      </div>
+      <div class="card-footer card-items">
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
